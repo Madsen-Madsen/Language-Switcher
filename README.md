@@ -31,3 +31,47 @@ A simple language switcher in JavaScript.
 ## Example
 
 When changing the language from "English" to "Deutsch", the text changes from "Hello, World!" to "Hallo, Welt!" and the description is updated accordingly.
+
+## Language Switcher with Buttons
+
+You can also create a language switcher using buttons with the flags of the languages. Below is an example of how to do this.
+
+### `index.html` (Buttons with Flags)
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Switcher with Flags</title>
+    <style>
+        .flag-button {
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+        .flag-button img {
+            width: 30px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Hello, World!</h1>
+    <p id="description">This is a simple language switcher example.</p>
+    
+    <div>
+        <button class="flag-button" data-language="en">
+            <img src="https://flagcdn.com/us.svg" alt="English">
+        </button>
+        <button class="flag-button" data-language="de">
+            <img src="https://flagcdn.com/de.svg" alt="Deutsch">
+        </button>
+        <button class="flag-button" data-language="es">
+            <img src="https://flagcdn.com/es.svg" alt="Español">
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
