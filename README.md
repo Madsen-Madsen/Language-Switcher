@@ -33,6 +33,14 @@ A simple language switcher in JavaScript.
 
 When changing the language from "English" to "Deutsch", the text changes from "Hello, World!" to "Hallo, Welt!" and the description is updated accordingly.
 
+## Customization
+
+You can customize this script as you wish to fit your own needs. Feel free to modify, improve, or expand the code!
+
+## Reporting Issues
+
+If you have questions, encounter problems, or just want to provide feedback, simply create an issue in this repository!
+
 ## Language Switcher with Buttons
 
 You can also create a language switcher using buttons with the flags of the languages. Below is an example of how to do this.
