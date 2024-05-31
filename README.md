@@ -19,6 +19,7 @@ A simple language switcher in JavaScript.
 ## Structure
 
 - `index.html`: The main HTML file that contains the user interface.
+- `styles.css`: The CSS file for styling the buttons.
 - `script.js`: The JavaScript that enables the language switching.
 - `README.md`: This file, explaining the usage and setup.
 
@@ -36,7 +37,10 @@ When changing the language from "English" to "Deutsch", the text changes from "H
 
 You can also create a language switcher using buttons with the flags of the languages. Below is an example of how to do this.
 
-### `index.html` (Buttons with Flags)
+### HTML
+
+Create a file named `index.html` and add the following content:
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -44,17 +48,7 @@ You can also create a language switcher using buttons with the flags of the lang
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Language Switcher with Flags</title>
-    <style>
-        .flag-button {
-            cursor: pointer;
-            border: none;
-            background: none;
-        }
-        .flag-button img {
-            width: 30px;
-            height: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1 id="title">Hello, World!</h1>
@@ -72,35 +66,6 @@ You can also create a language switcher using buttons with the flags of the lang
         </button>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const flagButtons = document.querySelectorAll('.flag-button');
-
-            const translations = {
-                en: {
-                    title: 'Hello, World!',
-                    description: 'This is a simple language switcher example.'
-                },
-                de: {
-                    title: 'Hallo, Welt!',
-                    description: 'Dies ist ein einfaches Beispiel für einen Sprachwechsler.'
-                },
-                es: {
-                    title: '¡Hola, Mundo!',
-                    description: 'Este es un ejemplo simple de un cambiador de idioma.'
-                }
-            };
-
-            flagButtons.forEach(button => {
-                button.addEventListener('click', function () {
-                    const selectedLanguage = button.getAttribute('data-language');
-                    const translation = translations[selectedLanguage];
-
-                    document.getElementById('title').textContent = translation.title;
-                    document.getElementById('description').textContent = translation.description;
-                });
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
