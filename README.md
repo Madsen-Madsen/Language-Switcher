@@ -68,7 +68,8 @@ Create a file named `index.html` and add the following content:
 
     <script src="script.js"></script>
 </body>
-</html>```
+</html>
+```
 
 ```CSS
 .flag-button {
