@@ -41,7 +41,7 @@ You can also create a language switcher using buttons with the flags of the lang
 
 Create a file named `index.html` and add the following content:
 
-```html
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,7 +71,11 @@ Create a file named `index.html` and add the following content:
 </html>
 ```
 
-```CSS
+### CSS
+
+Create a file named `styles.css` and add the following content:
+
+```
 .flag-button {
     cursor: pointer;
     border: none;
